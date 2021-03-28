@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build_Code_2') {
+            steps {
+                echo 'Build Code here_2'
+                sh '''
+                pwd
+                ls
+                echo 'Again Build Code here_2'
+                '''
+            }
+        }
+        stage('test_stage_2') {
+            steps {
+                echo 'this is test_stage code_2'
+            }
+        }
+        stage('Acceptance_Code_2') {
+            steps {
+                echo 'Acceptance Code here_2'
+            }
+        }
+        
+    }
+}
+
+
