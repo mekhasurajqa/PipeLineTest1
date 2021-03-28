@@ -15,11 +15,13 @@ pipeline {
         stage('test_stage_2') {
             steps {
                 echo 'this is test_stage code_2'
+				echo 'Again test_stage_2 Code here_2'
             }
         }
         stage('Acceptance_Code_2') {
             steps {
                 echo 'Acceptance Code here_2'
+				echo 'Again acceptance Code here_2'
             }
         }
         
