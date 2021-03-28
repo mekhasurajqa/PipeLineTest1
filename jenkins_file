@@ -8,8 +8,7 @@ pipeline {
                 sh '''
                 pwd
                 ls
-                mkdir build_code3
-				rm build_code3
+                echo 'Again Build Code here'
                 '''
             }
         }
