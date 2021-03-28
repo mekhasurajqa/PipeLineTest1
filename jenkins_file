@@ -8,18 +8,14 @@ pipeline {
                 sh '''
                 pwd
                 ls
-                mkdir build_code2
+                mkdir build_code3
+				rm build_code3
                 '''
             }
         }
         stage('test_stage') {
             steps {
                 echo 'this is test_stage code'
-                bat '''
-                dir
-                echo "this is from bat shell"
-                cd
-                '''
             }
         }
         stage('Acceptance_Code') {
